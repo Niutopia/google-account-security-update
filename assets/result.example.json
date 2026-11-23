@@ -1,0 +1,53 @@
+{
+  "example_only": true,
+  "account_key": "acct-demo-01",
+  "overall_status": "partial",
+  "identity_matches_expected": true,
+  "steps": {
+    "recovery_email": {
+      "status": "saved_unverified",
+      "value_matches_expected": true,
+      "verification_method": "settings_reload_pending_email_verification"
+    },
+    "recovery_phone": {
+      "status": "verified",
+      "value_matches_expected": true,
+      "verification_method": "settings_reload_and_status"
+    },
+    "authenticator": {
+      "status": "verified",
+      "verification_method": "enrollment_code_accepted_and_reload",
+      "private_ledger_synced": true
+    },
+    "two_step_verification": {
+      "status": "verified",
+      "enabled": true,
+      "verification_method": "settings_reload_and_status"
+    },
+    "passkey": {
+      "status": "user_action_required",
+      "verification_method": "native_confirmation_pending"
+    },
+    "password": {
+      "status": "pending",
+      "submitted": false
+    }
+  },
+  "fresh_login_tested": false,
+  "existing_gmail_session_checked": true,
+  "private_ledger_synced_for_confirmed_changes": true,
+  "next_actions": [
+    "Complete recovery email verification.",
+    "Complete the native passkey dialog and re-read the account page.",
+    "Proceed to the requested password change after rechecking identity."
+  ],
+  "cleanup": {
+    "owned_temporary_pages_remaining": 0,
+    "owned_temporary_contexts_remaining": 0,
+    "user_handoff_pages_retained": 1,
+    "handoff_retention_reason": "Pending user confirmation; recheck and close when finished.",
+    "owned_temporary_files_remaining": 0,
+    "host_temporary_bytes_reclaimed": 0,
+    "docker_bytes_reclaimed": 0
+  }
+}

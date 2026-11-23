@@ -1,0 +1,14 @@
+# Only these reviewed source files are eligible for version control.
+*
+!.gitignore
+!README.md
+!SKILL.md
+!references/
+!references/browser-cdp.md
+!references/verification.md
+!references/official-sources.md
+!assets/
+!assets/change-request.example.json
+!assets/result.example.json
+!scripts/
+!scripts/check_public.py

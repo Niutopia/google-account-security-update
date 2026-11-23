@@ -1,0 +1,50 @@
+{
+  "example_only": true,
+  "account_key": "acct-demo-01",
+  "account_email_ref": "PRIVATE_ACCOUNT_EMAIL_REF",
+  "current_password_ref": "PRIVATE_CURRENT_PASSWORD_REF",
+  "browser": {
+    "provider": "existing-browser-or-adspower",
+    "profile_ref": "PRIVATE_PROFILE_REF",
+    "cdp_endpoint_ref": "PRIVATE_CDP_ENDPOINT_REF",
+    "take_over_active_profile": false,
+    "keep_existing_pages": true
+  },
+  "changes": {
+    "recovery_email": {
+      "requested": true,
+      "new_value_ref": "PRIVATE_RECOVERY_EMAIL_REF"
+    },
+    "recovery_phone": {
+      "requested": true,
+      "new_value_ref": "PRIVATE_RECOVERY_PHONE_REF"
+    },
+    "authenticator": {
+      "requested": true,
+      "existing_seed_ref": "PRIVATE_EXISTING_TOTP_SEED_REF",
+      "new_seed_storage_ref": "PRIVATE_NEW_TOTP_SEED_STORAGE_REF",
+      "local_totp_generation_allowed": false
+    },
+    "two_step_verification": {
+      "requested": true,
+      "target_enabled": true,
+      "generate_backup_codes": false
+    },
+    "passkey": {
+      "requested": true,
+      "device_ref": "PRIVATE_DEVICE_REF",
+      "native_confirmation": "user"
+    },
+    "password": {
+      "requested": true,
+      "new_value_ref": "PRIVATE_NEW_PASSWORD_REF"
+    }
+  },
+  "verification": {
+    "reload_after_each_change": true,
+    "check_gmail_navigation": true,
+    "fresh_login_test": false
+  },
+  "private_ledger_ref": "PRIVATE_CANONICAL_LEDGER_REF",
+  "public_report_identity": "account_key_only"
+}
